@@ -1,0 +1,214 @@
+<!-- This is GUI for Heart disease Detection Application Using Machine Learning Classifer -->
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>credit score</title>
+
+
+  <style>
+    /* CSS code for button */
+    body {
+      background-image: url('static/images/aa.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* CSS code for button */
+    .button_css {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    }
+
+    .button_css:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    }
+
+
+
+
+
+
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+
+<style>
+
+h1 {
+background-color: gray;
+color: white;
+}
+h2 {
+background-color: ;
+color: black;
+}
+
+
+
+</style>
+<center>
+<h1><b> BREAST CANCER PREDICTION APPLICATION</b></h1>
+</center>
+
+  <div>
+   <img src="static/images/bb.jpg" class="w3-border w3-padding" alt="credit dcore" style="width:100%">
+ </div>
+
+ <div class="login">
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <center>
+
+    <form action="{{ url_for('predict')}}"method="post">
+
+
+
+<br> <br><br>
+        <h2><b>Enter the value of breast cancer features </b></h2>
+
+    	  <b><input type="text" name="texture_mean"     placeholder="texture_mean"  required="required" /></b>
+        <input type="text" name="perimeter_mean"   placeholder="perimeter_mean" required="required" /><br><br>
+	      	<input type="text" name="area_mean"        placeholder="area_mean"     required="required" />
+           <input type="text" name="smoothness_mean"  placeholder="smoothness_mean" required="required" /><br><br>
+             <input type="text" name="fractal_dimension_mean" placeholder="fractal_dimension_mean" required="required" />
+               <input type="text" name="radius_se" placeholder="radius_se" required="required" /><br><br>
+                <input type="text" name="texture_se"  placeholder="texture_se"  required="required" />
+                  <input type="text" name=" smoothness_se" placeholder=" smoothness_se" required="required" /><br><br>
+                    <input type="text" name="compactness_se" placeholder="compactness_se" required="required" />
+    	                <input type="text" name="concavity_se" placeholder=" concavity_se" required="required" /><br><br>
+                       <input type="text" name="concave points_se" placeholder="concave points_se" required="required" />
+		                    <input type="text" name="symmetry_se" placeholder="symmetry_se" required="required" /><br><br>
+                         <input type="text" name="fractal_dimension_se" placeholder="fractal_dimension_se" required="required" />
+                          <input type="text" name="texture_worst" placeholder="texture_worst" required="required" /><br><br>
+                          	<input type="text" name="perimeter_worst" placeholder="perimeter_worst" required="required" />
+                             <input type="text" name="area_worst	" placeholder="area_worst	" required="required" />
+
+
+  </center>
+
+			<br>
+      	<br>
+        	<br>
+          	<br>
+            	<br>
+
+
+
+              <div class="button_cont" align="center"><a class="button_css"  target="_blank" rel="nofollow noopener">
+                        <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict Cancer</strong></button></a>
+                    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+	<br>
+    </form>
+  </right>
+
+   <!-- Show predicted output using ML model -->
+   <div>
+       <center>
+   <h1>{{ prediction_text }}</h1>
+ </center>
+   </div>
+
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <h4>What is breast cancer?</h4>
+ <p>Breast cancer is a disease in which breast tissue cells start growing abnormally and uncontrollably breast cancer is of a different kind and it depends on which cell turns into cancer.  </p>
+ <p> Every woman requires to understand what she can do to diminish her risk of breast cancer. </p>
+
+ <br> <br><br>
+ <h5>  Below are some risk factors that you can change to empower yourself and make sure your breast cancer risks are as low as possible.</h5>
+ <p>Being overweight: older women who are overweight or obese have a higher risk of getting breast cancer than those at a normal weight. Obese women also have a high risk of breast cancer recurrence.</p>
+ <p>Drinking Alcohol: Studies show that a woman’s risk for breast increases with the more alcohol she drinks.</p>
+ <p>Smoking: Younger women who smoke have a higher risk of breast cancer than their non-smoking peers.</p>
+ <p>Eating habits: consuming unhealthy food and lack of exercise can also increase the risk of breast cancer.</p>
+ <p>Pregnancy and Breastfeeding: The timing of pregnancy and breastfeeding is crucial, the woman who has had their first pregnancy post 35 years or who never had full-time pregnancy are at a higher risk of breast cancer. </p>
+ <p>Also, studies show that women who breastfeed for longer are at a lower risk of breast cancer.</p>
+ <p>Oral contraceptives or birth control pills: Studies suggest that oral contraceptives insignificantly increase the risk of breast cancer. While others have revealed no nexus between the use of oral contraceptives to prevent pregnancy and the spread of breast cancer. Research may increase a woman’s risk of breast cancer.</p>
+
+
+
+
+
+
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <center>
+  <div>
+   <img src="static/images/aaa.jpg" class="w3-border w3-padding" alt="breast cancer" style="width:100%">
+ </div>
+</center>
+</body>
+</html>
